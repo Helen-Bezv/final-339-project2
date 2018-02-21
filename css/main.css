@@ -5,6 +5,10 @@ body {
 	font-size: 1.25rem;
 }
 
+html {
+		 scroll-behavior: smooth;
+	 }   /* adapted from: https://stackoverflow.com/questions/17631417/css-pure-css-scroll-animation/17633941#17633941*/
+
 h1 {
 	font-size: 3rem;
   color: white;
@@ -52,14 +56,14 @@ a:active, a:hover, a:focus {
 
 .intro {
 text-align: center;
-margin-top: 3rem;
-padding: 3rem;
-margin-bottom: 9rem;
+margin-top: 5rem;
+padding: 4rem;
+margin-bottom: 13.5rem;
 }
 
 .begin {
 	text-align: center;
-	margin-bottom: 10rem;
+	margin-bottom: 1rem;
 
 }
 
@@ -68,27 +72,54 @@ margin-bottom: 9rem;
 	font-size: 1.7rem;
 }
 
+/*adapted from: https://www.w3schools.com/css/css3_animations.asp*/
+
+@keyframes pencil {
+    from {max-width: 5rem;}
+    to {max-width: 5.15rem;}
+}
+
 .begin img {
 	max-width: 5rem;
 	margin: auto;
 }
 
+.begin img:hover{
+	animation-name: pencil;
+	animation-duration: 0.5s;
+
+}
+
+
 
 #main{
 
 	text-align: center;
-	margin-top: 5rem;
+	padding-top: 5rem;
+	height: 100vh;     /*viewport height, adapted from: https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css*/
 }
 
-/* Navigation flex-box styling adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+#attributes-list {
+	max-width: 12rem;
+}
 
+.attribute {
+	border: 10px #d17baa;
+	border-style: dotted;
+	display: flex;
+	align-items: stretch;
+	margin: 1rem 0 1rem 0;
+}
+
+
+/* Navigation flex-box styling adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 .navigation {
   list-style: none;
   margin: 0;
   background: #d17baa;
 
-	-webkit-box-shadow: 0 4px 5px -3px #888;    /*sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
+	-webkit-box-shadow: 0 4px 5px -3px #888;    /* one-sided shadow property. sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
 				 box-shadow: 0 4px 5px -3px #888;
 
   display: -webkit-box;
