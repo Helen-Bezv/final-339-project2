@@ -1,13 +1,16 @@
 
 body {
 	font-family: Arial, Verdana, sans-serif;
-	margin: 1rem;
+	margin: 0;
 	font-size: 1.25rem;
 }
 
 h1 {
 	font-size: 3rem;
-	margin-bottom: 0;
+  color: white;
+	background-color: #d17baa;
+	margin: 0;
+	padding: 1rem 0 0 1rem;
 }
 
 h2 {
@@ -21,14 +24,11 @@ h3 {
 	margin-bottom: 0;
 }
 
-p, ol, ul {
-	max-width: 40rem;
-}
 
 img {
 	height: auto;
 	max-width: 100%;
-	border: 1px solid black;
+	border: none;
 }
 
 figure {
@@ -49,35 +49,91 @@ a:active, a:hover, a:focus {
 	text-decoration: none;
 }
 
-code, samp {
-	display: block;
-	background-color: rgb(230,230,230);
-	padding: 0.5rem;
+.intro {
+text-align: center;
+margin-top: 3rem;
+padding: 3rem;
+margin-bottom: 1rem;
 }
 
-.nav-main-item {
-	display: inline-block;
-	color: white;
-	background-color: rgb(250,100,75);
-	font-size: 1.5rem;
-	padding: 0.25rem 0.5rem;
-	text-decoration: none;
-	transition: background-color 0.5s ease-out;
+.begin {
+	text-align: center;
+	margin-bottom: 10rem;
+
 }
 
-.bg1 {
-	background-color: purple;
+.begin p {
+	color: black;
+	font-size: 1.7rem;
 }
 
-.bg2 {
-	background-color: green;
+.begin img {
+	max-width: 15rem;
+	margin: auto;
 }
 
-.bg3 {
-	background-color: blue;
+
+#main{
+
+	text-align: center;
+	margin-top: 10rem;
 }
 
-.nav-main-item:active, .nav-main-item:hover, .nav-main-item:focus {
-	color: white;
-	background-color: rgb(50,50,50);
+/* Navigation flex-box styling adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  background: #d17baa;
+
+	-webkit-box-shadow: 0 4px 5px -3px #888;    /*sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
+				 box-shadow: 0 4px 5px -3px #888;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(#d17baa, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 }
