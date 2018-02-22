@@ -340,19 +340,3 @@ input[type=submit]:hover {
   font-weight: bold;
   font-size: 0.75rem;
 }
-
-.footer {
-display: flex;
-flex: 1 1 20rem;
-margin-top: 3rem;
-height: 3rem;
-width: 100%;
-background-color: #5dc5c5;
-text-align: center;
-color: white;
-}
-
-.footer p {
-	font-size: 0.7rem;
-
-}
