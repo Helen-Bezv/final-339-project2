@@ -1,6 +1,6 @@
 
 body {
-	font-family: 'Open Sans', Verdana, sans-serif;
+	font-family: Arial, Verdana, sans-serif;
 	margin: 0;
 	font-size: 1.25rem;
 }
@@ -12,7 +12,7 @@ html {
 h1 {
 	font-size: 3rem;
   color: white;
-	background-color: #5dc5c5;
+	background-color: #d17baa;
 	margin: 0;
 	padding: 1rem 0 0 1rem;
 }
@@ -44,13 +44,13 @@ figcaption {
 }
 
 a {
-	color: rgb(0,0,200);
+	color: rgb(200,0,0);
 	transition: color 0.5s;
 	text-decoration: none;
 }
 
 a:active, a:hover, a:focus {
-	color: rgb(0,0,70);
+	color: rgb(50,0,0);
 	text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ margin-bottom: 13.5rem;
 #main{
 
 	text-align: center;
-	padding-top: 4rem;
+	padding-top: 5rem;
 	height: 100vh;     /*viewport height, adapted from: https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css*/
 }
 
@@ -102,32 +102,19 @@ margin-bottom: 13.5rem;
 }
 
 .attribute {
-	border: 1.2px #5dc5c5;
+	border: 10px #d17baa;
 	border-style: dotted;
 	display: flex;
-	flex: 2 2 10em;
+	align-items: stretch;
 	margin: 1rem 0 1rem 0;
-	padding-left: 0.5rem;
-	text-align: left;
 }
-
-.attribute p {
-	font-size: 0.9rem;
-}
-
-.product-img {
-	max-width: 15rem;
-}
-
-
-
 
 /* Navigation flex-box styling adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
 .navigation {
   list-style: none;
   margin: 0;
-  background: #5dc5c5;
+  background: rgba(93,197,197, 0.9);
 
 	-webkit-box-shadow: 0 4px 5px -3px #888;    /* one-sided shadow property. sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
 				 box-shadow: 0 4px 5px -3px #888;
@@ -145,12 +132,12 @@ margin-bottom: 13.5rem;
 .navigation a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 0.75rem;
   color: white;
 }
 
 .navigation a:hover {
-  background: darken(#5dc5c5, 2%);
+  background: darken(#d17baa, 2%);
 }
 
 @media all and (max-width: 800px) {
@@ -253,37 +240,17 @@ label {
 }
 
 input[type=submit] {
-    background-color: #5dc5c5;
+    background-color: #4CAF50;
     color: white;
     padding: 0.1rem 1rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
-	  margin: 0.5rem;
-
-}
-
-.form-button {
-	background-color: #5dc5c5;
-	color: white;
-	padding: 0.1rem 1rem;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	float: right;
-	margin: 0.5rem;
-}
-
-.form-button:hover {
-
-	text-decoration: none;
-	background-color:#2eaa9c;
-	color: white;
 }
 
 input[type=submit]:hover {
-    background-color:#2eaa9c;
+    background-color: #45a049;
 }
 
 .container {
@@ -304,22 +271,12 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
-.col-3 {
-	padding: 1rem;
-	float: left;
-	width: 100%;
-	margin-top: 6px;
-}
-
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
@@ -341,18 +298,23 @@ input[type=submit]:hover {
   font-size: 0.75rem;
 }
 
-.footer {
-display: flex;
-flex: 1 1 20rem;
-margin-top: 3rem;
-height: 3rem;
-width: 100%;
-background-color: #5dc5c5;
-text-align: center;
-color: white;
+.event-item {
+  padding: 5rem;
+  width: 40%;
+  height: auto;
+  margin: 3rem 2rem;
+  line-height: 1.5rem;
+  color: black;
+  font-size: 1rem;
 }
 
-.footer p {
-	font-size: 0.7rem;
+.event-item img{
+	width: 100%;
+	height: auto;
+	margin: 2rem 0;
+}
 
+.event-header{
+	display: flex;
+	padding: 1rem 7rem;
 }
