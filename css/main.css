@@ -382,6 +382,13 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
+<<<<<<< HEAD
+=======
+
+		.event-item{
+			width: 100%;
+		}
+>>>>>>> master
 }
 
 .bottom-item {
@@ -389,7 +396,6 @@ input[type=submit]:hover {
   width: 200px;
   height: 100px;
   margin-top: 2rem;
-
   line-height: 10px;
   color: black;
   font-weight: bold;
@@ -397,9 +403,12 @@ input[type=submit]:hover {
 }
 
 .event-item {
-	background: rgb(240, 240, 240);
+background: rgb(240, 240, 240);
   padding: 5rem;
+<<<<<<< HEAD
   width: 40%;
+=======
+>>>>>>> master
   height: auto;
   margin: 3rem 2rem;
   line-height: 1.5rem;
