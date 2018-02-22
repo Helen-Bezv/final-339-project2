@@ -385,6 +385,10 @@ input[type=submit]:hover {
 
 }
 
+.description  {
+	line-height: 20px;
+}
+
 .bottom-item {
   padding: 1rem;
   width: 200px;
