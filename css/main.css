@@ -127,7 +127,7 @@ margin-bottom: 13.5rem;
 .navigation {
   list-style: none;
   margin: 0;
-  background: #5dc5c5;
+  background: rgb(93,197,197);
 
 	-webkit-box-shadow: 0 4px 5px -3px #888;    /* one-sided shadow property. sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
 				 box-shadow: 0 4px 5px -3px #888;
@@ -145,12 +145,19 @@ margin-bottom: 13.5rem;
 .navigation a {
   text-decoration: none;
   display: block;
-  padding: 1em;
+  padding: 1rem 4rem;
   color: white;
+	font-size: 1rem;
+	margin: 0;
 }
 
-.navigation a:hover {
-  background: darken(#5dc5c5, 2%);
+.navigation a:hover, a:active, a:focus{
+  background: rgb(73,177,177);
+	transition: 0.5s;
+}
+
+.navigation a:hover{
+	width: 5%;
 }
 
 @media all and (max-width: 800px) {
@@ -341,15 +348,15 @@ input[type=submit]:hover {
   font-size: 0.75rem;
 }
 
-.footer {
-display: flex;
-flex: 1 1 20rem;
-margin-top: 3rem;
-height: 3rem;
-width: 100%;
-background-color: #5dc5c5;
-text-align: center;
-color: white;
+.event-item {
+	background: rgb(240, 240, 240);
+  padding: 5rem;
+  width: 40%;
+  height: auto;
+  margin: 3rem 2rem;
+  line-height: 1.5rem;
+  color: black;
+  font-size: 1rem;
 }
 
 .footer p {
