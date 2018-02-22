@@ -292,17 +292,14 @@ input[type=submit]:hover {
 
 		.event-item{
 			width: 100%;
-			justify-content: center;
 		}
-
-	}
+}
 
 .bottom-item {
   padding: 1rem;
   width: 200px;
   height: 100px;
   margin-top: 2rem;
-
   line-height: 10px;
   color: black;
   font-weight: bold;
@@ -310,9 +307,8 @@ input[type=submit]:hover {
 }
 
 .event-item {
-	background: rgb(240, 240, 240);
+background: rgb(240, 240, 240);
   padding: 5rem;
-  width: 100%;
   height: auto;
   margin: 3rem 2rem;
   line-height: 2rem;
