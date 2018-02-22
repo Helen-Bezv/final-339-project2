@@ -232,6 +232,30 @@ margin-bottom: 13.5rem;
   padding: 5rem 0;
 }
 
+#catalogue {
+
+  padding: 10rem 0 8rem 0;
+	margin-bottom: 4rem;
+
+}
+
+#catalogue img {
+
+   padding: 2rem;
+	 max-width: 10rem;
+	 height: auto;
+
+}
+
+#catalogue figcaption {
+	font-size: 0.8rem;
+}
+
+#catalogue li:hover {
+	background-color: grey;
+}
+
+
 hr {
     display: block;
     height: 1px;
