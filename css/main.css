@@ -377,21 +377,20 @@ input[type=submit]:hover {
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+@media all and (max-width: 600px) {
     .col-1, .col-2, input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 
-		.event-item{
-			width: 100%;
-		}
 }
+
 .bottom-item {
   padding: 1rem;
   width: 200px;
   height: 100px;
   margin-top: 2rem;
+
   line-height: 10px;
   color: black;
   font-weight: bold;
@@ -407,6 +406,11 @@ input[type=submit]:hover {
   line-height: 1.5rem;
   color: black;
   font-size: 1rem;
+}
+
+.event-item img{
+	width: 100%;
+	height: auto;
 }
 
 .footer p {
