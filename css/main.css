@@ -1,6 +1,6 @@
 
 body {
-	font-family: Arial, Verdana, sans-serif;
+	font-family: 'Open Sans', Verdana, sans-serif;
 	margin: 0;
 	font-size: 1.25rem;
 }
@@ -12,7 +12,7 @@ html {
 h1 {
 	font-size: 3rem;
   color: white;
-	background-color: #d17baa;
+	background-color: #5dc5c5;
 	margin: 0;
 	padding: 1rem 0 0 1rem;
 }
@@ -44,13 +44,13 @@ figcaption {
 }
 
 a {
-	color: rgb(200,0,0);
+	color: rgb(0,0,200);
 	transition: color 0.5s;
 	text-decoration: none;
 }
 
 a:active, a:hover, a:focus {
-	color: rgb(50,0,0);
+	color: rgb(0,0,70);
 	text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ margin-bottom: 13.5rem;
 #main{
 
 	text-align: center;
-	padding-top: 5rem;
+	padding-top: 4rem;
 	height: 100vh;     /*viewport height, adapted from: https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css*/
 }
 
@@ -102,11 +102,44 @@ margin-bottom: 13.5rem;
 }
 
 .attribute {
-	border: 10px #d17baa;
+	border: 1.2px #5dc5c5;
 	border-style: dotted;
 	display: flex;
-	align-items: stretch;
+	flex: 2 2 10em;
 	margin: 1rem 0 1rem 0;
+	padding-left: 0.5rem;
+	text-align: left;
+}
+
+.attribute p {
+	font-size: 0.9rem;
+}
+
+.product-img {
+	max-width: 25rem;
+}
+
+.learn-more {
+	border: 0 solid #fff;
+}
+
+.learn-more a {
+	font-size: 0.7rem;
+	text-decoration: underline;
+}
+
+.infographic {
+	text-align: center;
+}
+
+.infographic img {
+	max-width: 70%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+#archetypes {
+	margin-top: 5rem;
 }
 
 
@@ -115,7 +148,7 @@ margin-bottom: 13.5rem;
 .navigation {
   list-style: none;
   margin: 0;
-  background: #d17baa;
+  background: #5dc5c5;
 
 	-webkit-box-shadow: 0 4px 5px -3px #888;    /* one-sided shadow property. sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
 				 box-shadow: 0 4px 5px -3px #888;
@@ -138,7 +171,7 @@ margin-bottom: 13.5rem;
 }
 
 .navigation a:hover {
-  background: darken(#d17baa, 2%);
+  background: darken(#5dc5c5, 2%);
 }
 
 @media all and (max-width: 800px) {
