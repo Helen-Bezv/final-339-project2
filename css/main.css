@@ -385,13 +385,21 @@ input[type=submit]:hover {
 
 		.event-item{
 			width: 100%;
+			justify-content: center;
 		}
+<<<<<<< HEAD
 }
+=======
+
+	}
+
+>>>>>>> parent of d79a586... x
 .bottom-item {
   padding: 1rem;
   width: 200px;
   height: 100px;
   margin-top: 2rem;
+
   line-height: 10px;
   color: black;
   font-weight: bold;
@@ -400,8 +408,13 @@ input[type=submit]:hover {
 
 .event-item {
 	background: rgb(240, 240, 240);
+<<<<<<< HEAD
   padding: 5rem;
   width: 40%;
+=======
+  padding: 5rem;
+  width: 100%;
+>>>>>>> parent of d79a586... x
   height: auto;
   margin: 3rem 2rem;
   line-height: 1.5rem;
