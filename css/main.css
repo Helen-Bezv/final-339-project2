@@ -385,18 +385,6 @@ input[type=submit]:hover {
 
 }
 
-.bottom-item {
-  padding: 1rem;
-  width: 200px;
-  height: 100px;
-  margin-top: 2rem;
-
-  line-height: 10px;
-  color: black;
-  font-weight: bold;
-  font-size: 0.75rem;
-}
-
 .event-item {
 	background: rgb(240, 240, 240);
   padding: 5rem;
@@ -405,13 +393,18 @@ input[type=submit]:hover {
   margin: 3rem 2rem;
   line-height: 1.5rem;
   color: black;
-  font-size: 1rem;
+  font-size: 0.85rem;
 }
 
 .event-item img{
 	width: 100%;
 	height: auto;
-}
+	padding: 2rem 0;
+	}
+
+	#event-button{
+		margin: 3rem 0;
+	}
 
 .about-item{
 	text-align: center;
