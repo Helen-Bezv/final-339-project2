@@ -436,6 +436,23 @@ input[type=submit]:hover {
 	margin: 0 auto;
 }
 
+.thanks-item{
+	width: 60%;
+	padding: 4rem 2rem;
+}
+
+.thanks-item h3{
+	font-size: 1.75rem;
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+}
+
+.thanks-item #thanks-button{
+	margin: 5rem 0;
+
+
+}
+
 .footer p {
 	font-size: 0.7rem;
 
