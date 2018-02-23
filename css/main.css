@@ -385,7 +385,14 @@ input[type=submit]:hover {
 
 }
 
+.description  {
 	line-height: 20px;
+}
+
+
+
+
+
 .event-item {
 	background: rgb(240, 240, 240);
   padding: 5rem;
@@ -407,24 +414,6 @@ input[type=submit]:hover {
 		margin: 3rem 0;
 	}
 
-.about-item{
-	text-align: center;
-	padding: 2rem;
-	margin: 5rem;
-	font-size: 1rem;
-	background: rgb(240, 240, 240);
-	width: 100%;
-}
-
-.about-item h3{
-	font-size: 1.5rem;
-	padding: 2rem;
-	}
-
-.about-item img{
-	width: 30%;
-	margin: 0 auto;
-}
 
 .thanks-item{
 	width: 60%;
@@ -439,9 +428,9 @@ input[type=submit]:hover {
 
 .thanks-item #thanks-button{
 	margin: 5rem 0;
-
-
 }
+
+
 
 .footer p {
 	font-size: 0.7rem;
