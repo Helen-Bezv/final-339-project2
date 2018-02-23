@@ -389,13 +389,15 @@ input[type=submit]:hover {
 	line-height: 20px;
 }
 
-
+.event-container h2 {
+	margin: 1rem 0 0 5.5rem;
+}
 
 
 
 .event-item {
 	background: rgb(240, 240, 240);
-  padding: 5rem;
+  padding: 2rem;
   width: 40%;
   height: auto;
   margin: 3rem 2rem;
@@ -429,6 +431,29 @@ input[type=submit]:hover {
 .thanks-item #thanks-button{
 	margin: 5rem 0;
 }
+
+
+.about-item{
+	text-align: center;
+	padding: 2rem;
+	margin: 5rem;
+	font-size: 1rem;
+	background: rgb(240, 240, 240);
+	width: 100%;
+}
+
+.about-item h3{
+	font-size: 1.5rem;
+	padding: 2rem;
+	}
+
+.about-item img{
+	width: 30%;
+	margin: 0 auto;
+}
+
+
+
 
 
 
