@@ -7,6 +7,9 @@ body {
 
 html {
 		 scroll-behavior: smooth;
+
+		 position: relative;
+	 min-height: 100%;
 	 }   /* adapted from: https://stackoverflow.com/questions/17631417/css-pure-css-scroll-animation/17633941#17633941*/
 
 h1 {
@@ -56,9 +59,9 @@ a:active, a:hover, a:focus {
 
 .intro {
 text-align: center;
-margin-top: 5rem;
+margin-top: 7rem;
 padding: 4rem;
-margin-bottom: 6.5rem;
+margin-bottom: 8.5rem;
 }
 
 .intro p {
@@ -66,14 +69,10 @@ margin-bottom: 6.5rem;
 
 }
 
-@media all and (max-width: 600px) {
-	.intro p {
-		padding: 0 1rem 0 1rem;
-	}
-}
 
 textarea {
 	height: 25rem;
+
 }
 
 .begin {
@@ -147,7 +146,7 @@ textarea {
 	margin: 0;
 	width: 8%;
 	text-align: center;
-	border-bottom: 0 solid rgba(93, 197, 197, 0.1);
+	border-bottom: 0 solid rgb(93, 197, 197);
 }
 
 .navigation-item a:active, a:focus, a:hover{
@@ -221,6 +220,22 @@ textarea {
 	text-decoration: none;
 
 }
+
+/*Adapted from: https://codepen.io/nxworld/pen/ZYNOBZ*/
+.saved-item img{
+-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.saved-item img:hover {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+
+
 
 .saved-container a:hover, a:active, a:focus{
 	border-color: rgba(0, 0, 0, 0.2);
@@ -433,4 +448,13 @@ input[type=submit]:hover {
 	width: 100%;
 	padding: 0.5rem;
 	margin-top: 5rem;
+}
+
+
+#footer {
+	position: absolute;
+		 left: 0;
+		 bottom: 0;
+		 width: 100%;
+		 height: 150px;
 }

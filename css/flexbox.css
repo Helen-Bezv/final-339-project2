@@ -39,7 +39,7 @@
 }
 
 .navigation {
-	background: rgba(240, 240, 240, 0.3);
+	background: rgba(240, 240, 240, 0.9);
 	width:100%;
 	margin: 0;
 	position: fixed;
@@ -64,6 +64,12 @@
 
 	.event-item h3{
 		line-height: 2rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.intro p {
+		padding: 0 1rem 0 1rem;
 	}
 }
 
@@ -199,7 +205,7 @@
   -webkit-flex-flow: row wrap;
   justify-content: center;
 }
-
+/*
 .footer-container {
 	list-style: none;
 
