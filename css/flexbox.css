@@ -31,16 +31,117 @@
 
 }
 
+.logo{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:2;
+}
 
-@media (min-width: 50.25em) {
+.navigation {
+	background: rgba(240, 240, 240, 0.3);
+	width:100%;
+	margin: 0;
+	position: fixed;
+	z-index: 1;
+	right: 0;
+	top: 0;
 
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
 
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 
+	-webkit-justify-content: flex-end;
+	-ms-justify-content: flex-end;
+	justify-content: flex-end;
+}
+
+@media (min-width: 50.26rem){
+
+	.event-item h3{
+		line-height: 2rem;
+	}
+}
+
+@media (max-width: 50.25rem) {
+    .col-1, .col-2, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+		.about-item{
+			width: 80%;
+			font-size: 0.9rem;
+		}
+
+		.event-item{
+			width: 90%;
+		}
+		.event-item h3{
+			line-height: 2.5rem;
+			font-size: 1.25rem;
+		}
+
+		.event-container h2{
+			font-size: 2rem;
+			justify-content: center;
+			margin: 3rem;
+		}
+
+	}
+
+@media (max-width: 30rem){
+
+	.about-item{
+		width: 100%;
+		font-size: 0.75rem;
+	}
+
+	.event-item{
+		width: 100%;
+		margin: 0;
+		padding: 2rem;
+		font-size: 0.75rem;
+	}
 
 }
 
+.profile-container {
+  padding: 0 2rem;
+  margin: 8rem 0 5rem 0;
+	list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.saved-container {
+  padding: 0 2rem;
+  margin: 0;
+	list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
 .contact-container {
-  padding: 0 2rem 0 2rem;
+  padding: 0 2rem;
   margin: 0;
 
   display: -webkit-box;
@@ -56,7 +157,7 @@
 
 .event-container {
   padding: 0;
-  margin: 0;
+  margin: 8rem 0;
   list-style: none;
 
   display: -webkit-box;
@@ -66,7 +167,7 @@
   display: flex;
 
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .about-container {
@@ -81,13 +182,26 @@
   display: flex;
 
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .thanks-container {
   padding: 0;
   margin: 0;
   list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer-container {
+	list-style: none;
 
   display: -webkit-box;
   display: -moz-box;

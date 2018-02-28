@@ -134,71 +134,25 @@ textarea {
 	max-width: 15rem;
 }
 
-
-
-
-/* Navigation flex-box styling adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-
-.navigation {
-  list-style: none;
-  margin: 0;
-  background: rgb(93,197,197);
-
-	-webkit-box-shadow: 0 4px 5px -3px #888;    /* one-sided shadow property. sourced from: https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element */
-				 box-shadow: 0 4px 5px -3px #888;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-end;
+.logo{
+	width: 3%;
+	margin-left: 2rem;
 }
 
-.navigation a {
+.navigation-item{
   text-decoration: none;
-  display: block;
-  padding: 1rem 4rem;
-  color: white;
+  padding: 0.75rem 2rem;
+	color: black;
 	font-size: 1rem;
 	margin: 0;
+	width: 8%;
+	text-align: center;
+	border-bottom: 0 solid rgba(93, 197, 197, 0.1);
 }
 
-.navigation a:hover, a:active, a:focus{
-  background: rgb(73,177,177);
+.navigation-item a:active, a:focus, a:hover{
+	border-bottom: 0.3rem solid rgb(93, 197, 197);
 	transition: 0.5s;
-}
-
-.navigation a:hover{
-	width: 5%;
-}
-
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
-}
-
-
-@media all and (max-width: 600px) {
-  .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
-
-  .navigation a {
-    text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
 }
 
 .contact-item1 {
@@ -223,28 +177,58 @@ textarea {
 	flex: 2 2 10rem;
 }
 
-#profile{
-  padding: 8rem 0 5rem 0;
+.profile-container{
 	font-size: 1rem;
+	background: rgb(240, 240, 240);
 }
 
-.profile-left{
-  min-width: 20rem;
-  max-width: 30rem;
+.profile-left {
+  width:40%;
+	margin: 4rem 2rem;
+	text-align: center;
 }
+
 .profile-left img{
-  height: auto;
-  width:60%;
-}
-
-#description{
-  display: inline-block;
-  padding: 1rem 4rem;
+	width: 90%;
+	height: auto;
 }
 
 .profile-right{
-  display: inline-block;
-  padding: 5rem 0;
+	background: rgba(255, 255, 255, 0.5);
+	text-align: center;
+	width: 40%;
+	margin: 4rem 0;
+	padding: 2rem 0;
+}
+
+.profile-right h3{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+.profile-right .form-button{
+	float: none;
+	margin: 1.5rem 0;
+}
+
+.saved-item{
+	background: white;
+	width: 15%;
+	margin: 0 5rem 5rem 5rem;
+	height: auto;
+	text-align: center;
+	padding: 2rem;
+	text-decoration: none;
+
+}
+
+.saved-container a:hover, a:active, a:focus{
+	border-color: rgba(0, 0, 0, 0.2);
+	transition: 0.7s;
+}
+
+.grey{
+	color: rgb(190, 190, 190);
 }
 
 #catalogue {
@@ -327,7 +311,7 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
-	margin: 0.5rem;
+	margin: 3rem 0;
 }
 
 .form-button:hover {
@@ -374,15 +358,6 @@ input[type=submit]:hover {
     clear: both;
 }
 
-
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media all and (max-width: 600px) {
-    .col-1, .col-2, input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-
 }
 
 .description  {
@@ -395,13 +370,17 @@ input[type=submit]:hover {
 
 .event-item {
 	background: rgb(240, 240, 240);
-  padding: 5rem;
+  padding: 3rem 4rem 1rem 4rem;
   width: 40%;
   height: auto;
-  margin: 3rem 2rem;
+  margin: 3rem 1rem 2rem 1rem;
   line-height: 1.5rem;
   color: black;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.event-item h3{
+	font-size: 1.5rem;
 }
 
 .event-item img{
@@ -410,6 +389,11 @@ input[type=submit]:hover {
 	padding: 2rem 0;
 	}
 
+.event-container h2{
+
+	margin: 4rem 0 2rem 8rem;
+
+}
 	#event-button{
 		margin: 3rem 0;
 	}
@@ -432,7 +416,11 @@ input[type=submit]:hover {
 
 
 
-.footer p {
+.footer-item{
 	font-size: 0.7rem;
-
+	background: rgb(240, 240, 240);
+	text-align: center;
+	width: 100%;
+	padding: 0.5rem;
+	margin-top: 5rem;
 }
