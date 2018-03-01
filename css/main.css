@@ -7,8 +7,6 @@ body {
 
 html {
 		 scroll-behavior: smooth;
-
-
 	 min-height: 100%;
 	 }   /* adapted from: https://stackoverflow.com/questions/17631417/css-pure-css-scroll-animation/17633941#17633941*/
 
@@ -66,9 +64,7 @@ margin-bottom: 8.5rem;
 
 .intro p {
 	padding: 0 5rem 0 5rem;
-
 }
-
 
 textarea {
 	height: 25rem;
@@ -176,14 +172,9 @@ textarea {
 	flex: 2 2 10rem;
 }
 
-.profile-container{
-	font-size: 1rem;
-	background: rgb(240, 240, 240);
-}
-
 .profile-left {
   width:40%;
-	margin: 4rem 2rem;
+	margin: 2rem;
 	text-align: center;
 }
 
@@ -193,36 +184,36 @@ textarea {
 }
 
 .profile-right{
-	background: rgba(255, 255, 255, 0.5);
-	text-align: center;
+	background: rgb(240, 240, 240);
 	width: 40%;
-	margin: 4rem 0;
-	padding: 2rem 0;
+	margin: 2rem;
+	padding: 4rem 6rem 2rem 6rem;
+	font-size: 0.85rem;
 }
 
 .profile-right h3{
-	font-size: 2rem;
+	font-size: 1rem;
 	margin-bottom: 2rem;
 }
 
 .profile-right .form-button{
-	float: none;
-	margin: 1.5rem 0;
+	float: right;
+	margin: 1rem 0;
 }
 
 .saved-item{
-	background: white;
 	width: 15%;
+	height: 50%;
 	margin: 0 5rem 5rem 5rem;
-	height: auto;
 	text-align: center;
-	padding: 2rem;
+	padding: 1rem 0;
 	text-decoration: none;
-
+	color: black;
 }
 
 /*Adapted from: https://codepen.io/nxworld/pen/ZYNOBZ*/
 .saved-item img{
+	width: 100%;
 -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -230,12 +221,10 @@ textarea {
 }
 
 .saved-item img:hover {
+	background: rgb(240, 240, 240);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 }
-
-
-
 
 .saved-container a:hover, a:active, a:focus{
 	border-color: rgba(0, 0, 0, 0.2);
@@ -386,7 +375,7 @@ input[type=submit]:hover {
 }
 
 .description  {
-	line-height: 20px;
+	line-height: 0.5rem;
 }
 
 .event-container h2 {
@@ -396,9 +385,14 @@ input[type=submit]:hover {
 .event-description{
 	text-align: center;
 	font-size: 1rem;
-	line-height: 1.5rem;
-	width: 50%;
-	margin-top: 5rem;
+	line-height: 2rem;
+	width: 55%;
+	margin: 8rem auto 0 auto;
+}
+
+.event-description h3{
+	font-size: 1.5rem;
+	margin: 2rem 2rem 4rem 2rem;
 }
 
 .event-item {
@@ -431,7 +425,6 @@ input[type=submit]:hover {
 		margin: 3rem 0;
 	}
 
-
 .thanks-item{
 	width: 60%;
 	padding: 4rem 2rem;
@@ -447,18 +440,28 @@ input[type=submit]:hover {
 	margin: 5rem 0;
 }
 
+.about-description{
+		background: rgb(240, 240, 240);
+		padding: 3rem;
+		width: 70%;
+		text-align: center;
+		margin: 2rem auto;
+}
 .about-item{
 	text-align: center;
 	line-height: 2rem;
 	padding: 2rem;
-	margin: 8rem 0;
+	margin: 5rem 0;
 	font-size: 1rem;
-	background: rgb(240, 240, 240);
-	width: 50%;
 }
 
 .about-item img{
-	width: 50%;
+	width: 25%;
+	margin-top: 2rem;
+}
+
+.about-item h3{
+	font-size: 1.5rem;
 }
 
 .footer-item{
