@@ -211,6 +211,12 @@ textarea {
 	color: black;
 }
 
+.saved-icon {
+	width: 33.3%;
+}
+
+
+
 /*Adapted from: https://codepen.io/nxworld/pen/ZYNOBZ*/
 .saved-item img{
 	width: 100%;

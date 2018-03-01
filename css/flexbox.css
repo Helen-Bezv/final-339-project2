@@ -18,6 +18,7 @@
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
+	-webkit-flex-flow: row wrap;
 
 }
 
@@ -166,6 +167,8 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: center;
+
+
 }
 
 .event-description{
