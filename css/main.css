@@ -8,7 +8,7 @@ body {
 html {
 		 scroll-behavior: smooth;
 
-		 position: relative;
+
 	 min-height: 100%;
 	 }   /* adapted from: https://stackoverflow.com/questions/17631417/css-pure-css-scroll-animation/17633941#17633941*/
 
@@ -108,7 +108,6 @@ textarea {
 
 	text-align: center;
 	padding-top: 4rem;
-	height: 100vh;     /*viewport height, adapted from: https://www.lullabot.com/articles/unexpected-power-of-viewport-units-in-css*/
 }
 
 #attributes-list {
@@ -461,10 +460,10 @@ input[type=submit]:hover {
 }
 
 
-#footer {
-	position: absolute;
+footer {
+	/* position: absolute;
 		 left: 0;
 		 bottom: 0;
 		 width: 100%;
-		 height: 150px;
+		 height: 150px; */
 }

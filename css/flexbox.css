@@ -217,6 +217,7 @@
   justify-content: center;
 }
 
+
 .footer-container {
 	list-style: none;
 
@@ -228,7 +229,7 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: center;
-	position: relative;
+	/* position: relative; */
 	bottom: 0;
 	left: 0;
 }
