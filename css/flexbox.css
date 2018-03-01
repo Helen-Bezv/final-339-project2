@@ -79,7 +79,7 @@
         margin-top: 0;
     }
 
-		.about-item .about-description{
+		.about-item, .about-description{
 			width: 100%;
 			font-size: 0.9rem;
 		}
@@ -98,14 +98,22 @@
 			margin: 3rem;
 		}
 
+		.navigation-item{
+			width: 15%;
+		}
+
 	}
 
 @media (max-width: 30rem){
 
-	.about-item .about-description{
+	.about-item, .about-description{
 		width: 100%;
-		margin: 0;
 		font-size: 0.8rem;
+	}
+
+	.about-item h3{
+		margin-top: 7rem;
+		font-size: 1rem;
 	}
 
 	.event-item{
@@ -114,6 +122,11 @@
 		padding: 2rem;
 		font-size: 0.8rem;
 	}
+
+	.navigation-item{
+		width: 100%;
+		font-size: 0.75rem;
+		}
 
 }
 
