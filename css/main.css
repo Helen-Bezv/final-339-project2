@@ -437,6 +437,13 @@ input[type=submit]:hover {
 	margin: 5rem 0;
 }
 
+body .about{
+	background-image: url("../img/bg-img.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: auto;
+}
 .about-description{
 		background: rgb(240, 240, 240);
 		padding: 3rem;
