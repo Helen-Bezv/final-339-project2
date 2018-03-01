@@ -1,0 +1,48 @@
+@font-face{
+  font-family: 'OpenSans-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'HelveticaNeue-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'HelveticaNeue-UltraLight';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/HelveticaNeue-UltraLight.ttf') format('truetype');
+}
+
+@font-face{
+  font-family:'HelveticaNeue-Medium';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/HelveticaNeue-Medium.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'OpenSans-Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/OpenSans-Italic.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'OpenSans-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/OpenSans-Light.ttf') format('truetype');
+}
+
+@font-face{
+  font-family: 'UniversLTStd-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/UniversLTStd-Light.otf') format('opentype');
+}

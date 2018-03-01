@@ -383,7 +383,13 @@ input[type=submit]:hover {
 	margin: 1rem 0 0 5.5rem;
 }
 
-
+.event-description{
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	width: 50%;
+	margin-top: 5rem;
+}
 
 .event-item {
 	background: rgb(240, 240, 240);
@@ -431,14 +437,18 @@ input[type=submit]:hover {
 	margin: 5rem 0;
 }
 
-
 .about-item{
 	text-align: center;
+	line-height: 2rem;
 	padding: 2rem;
-	margin: 5rem;
+	margin: 8rem 0;
 	font-size: 1rem;
 	background: rgb(240, 240, 240);
-	width: 100%;
+	width: 50%;
+}
+
+.about-item img{
+	width: 50%;
 }
 
 .footer-item{

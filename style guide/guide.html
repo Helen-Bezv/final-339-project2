@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Style Guide</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content = "width=device-width, initial-scale=1">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+  <style>
+  ul{
+    list-style-type: circle;
+  }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>style guide</h1>
+
+  <nav class="nav-main box">
+
+    <a href="#links" class= "nav nav-box">In-Text-Links</a>
+    <a href="#nav-buttons" class= "nav nav-box">Navigation Button</a>
+    <a href="#sub-buttons" class= "nav nav-box">Submit Button</a>
+    <a href="#entries" class= "nav nav-box">Text Entries</a>
+    <a href="#headings" class= "nav nav-box">Headings</a>
+    <a href="#paragraphs" class= "nav nav-box">Paragraphs</a>
+    <a href="#bullet" class= "nav nav-box">Bulleted List</a>
+    <a href="#numbers" class= "nav nav-box">Numbered List</a>
+    <a href="#main" class= "nav nav-box">Main Navigation</a>
+    <a href="#listing" class= "nav nav-box">Service Listing</a>
+    <a href="#colors" class= "nav nav-box">Color Swatches</a>
+  </nav>
+
+  <div class="all">
+
+    <section id="links">
+    <div class="block box-item-nav">
+      <h2>In-Text Link</h2>
+
+  <h3>CSS Selector:</h3>
+  <p>a{ }</p>
+
+  <h3>Sample Code:</h3>
+  <code>
+    <br>&lt;p></br>
+    <br>&lt;a href="">&lt;/a&gt;</br>
+    <br>&lt;p&gt;</br>
+  </code>
+
+  <h3>Rendered Element:</h3>
+  <p>This is an <a href="https://www.google.com" >in-text</a> link</p>
+
+  </div>
+</section>
+
+<section id="nav-buttons">
+
+<div class="block box-item-nav">
+  <h2>Navigation Button Style:</h2>
+
+  <h3>CSS Selector:</h3>
+    <p>.mini-nav</p>
+
+  <h3>Sample Code:</h3>
+    <code>
+      <br>&lt;nav&gt;</br>
+          <br>&lt;a href=""&gt;&lt;/a></br>
+        <br>&lt;/nav></br>
+    </code>
+  <h3>Rendered Element:</h3>
+
+  <nav class="mini-nav box">
+    <a href="#Requests" class="nav nav-box">Requests</a>
+  </nav>
+
+</div>
+</section>
+
+<section id="sub-buttons">
+  <div class="block box-item-nav">
+  <h2>Submit/Reset Buttons</h2>
+
+  <h3>CSS Selector:</h3>
+  <p>.button-animated</p>
+  <p>.button-animated2</p>
+
+  <h3>Sample Code:</h3>
+  <code>
+    <br>&lt;button class="button-animated">&lt;span&gt;&lt;/span&gt;&lt;/button&gt;</br>
+    <br>&lt;button class="button-animated2"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;</br>
+  </code>
+
+  <h3>Rendered Element:</h3>
+  <button class="button-animated"><span>Log in</span></button>
+  <button class="button-animated2"><span>Cancel</span></button>
+</div>
+</section>
+
+<section id="entries">
+<div class="block box-item-nav">
+  <h2>Text Input Field</h2>
+
+  <h3>CSS Selector:</h3>
+    <p>.text{ }</p>
+  <h3>Sample Code:</h3>
+    <code>
+      <br>&lt;label for="form-name">&lt;/label&gt;</br>
+      <br>&lt;input type="text" placeholder=""&gt;</br>
+    </code>
+
+  <h3>Rendered Element:</h3>
+  <form method="post" action="#"></form>
+    <label for="form-name">Special Requests:</label>
+    <input type="text" id="form-name" placeholder="Talk to me!">
+  </div>
+</section>
+
+<section id="headings">
+  <div class="block box-item-nav">
+    <h2>Three Levels of Headings</h2>
+
+    <h3>CSS Selector:</h3>
+      <p>h4, h5, h6{ }</p>
+
+    <h3>Sample Code:</h3>
+      <code>
+        <br>&lt;h4>Neighborhood Grocer&gt;/h4></br>
+        <br>&lt;h5>Neighborhood Grocer&gt;/h5></br>
+        <br>&lt;h6>NEIGHBORHOOD GROCER&gt;/h6></br>
+      </code>
+
+    <h3>Rendered Element:</h3>
+    <h4>Neighborhood Grocer</h4>
+    <h5>Neighborhood Grocer</h5>
+    <h6>NEIGHBORHOOD GROCER</h6>
+  </div>
+</section>
+
+<section id="paragraphs">
+  <div class="block box-item-nav">
+  <h2>Paragraph</h2>
+
+  <h3>CSS Selector:</h3>
+  <p>p{ }</p>
+
+  <h3>Sample Code:</h3>
+  <code>
+    (CSS): max-width: 40rem;
+    line-height:150;
+  </code>
+
+  <h3>Rendered Element:</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div>
+</section>
+
+<section id="bullet">
+<div class="block box-item-nav">
+  <h2>Bulleted List</h2>
+
+  <h3>CSS Selector:</h3>
+    <p>ul{ }</p>
+
+  <h3>Sample Code:</h3>
+    <code>
+      <br>&lt;ul></br>
+      <br>&lt;li>&lt;/li></br>
+      <br>&lt;li>&lt;/li></br>
+      <br>&lt;li>&lt;/li></br>
+    <br>&lt;/ul></br>
+    </code>
+
+  <h3>Rendered Element:</h3>
+  <ul>
+    <li>potatoes</li>
+    <li>fries</li>
+    <li>mashed</li>
+  </ul>
+</div>
+</section>
+
+<section id="numbers">
+<div class="block box-item-nav">
+  <h2>Numbered List</h2>
+
+  <h3>CSS Selector:</h3>
+    <p>ol{ }</p>
+
+  <h3>Sample Code:</h3>
+    <code>
+      <br>&lt;ol></br>
+      <br>&lt;li>&lt;/li></br>
+      <br>&lt;li>&lt;/li></br>
+      <br>&lt;li>&lt;/li></br>
+    <br>&lt;/ol></br>
+</code>
+
+  <h3>Rendered Element:</h3>
+  <ol>
+    <li>potatoes</li>
+    <li>fries</li>
+    <li>mashed</li>
+  </ol>
+</div>
+</section>
+
+<section id="main">
+
+<div class="block box-item-nav">
+  <h2>Main Navigation:</h2>
+
+  <h3>CSS Selector:</h3>
+    <p>.mini-nav</p>
+
+  <h3>Sample Code:</h3>
+    <code>
+      <br>&lt;nav class=""&gt;</br>
+      <br>&lt;a href="" class="">&lt;/a></br>
+      <br>&lt;a href="" class="">&lt;/a></br>
+      <br>&lt;a href="" class="">&lt;/a></br>
+      <br>&lt;/nav></br>
+    </code>
+  <h3>Rendered Element:</h3>
+
+  <nav class="mini-nav box">
+    <a href="#Map" class="nav nav-box">Map</a>
+    <a href="#Requests" class="nav nav-box">Requests</a>
+    <a href="#History" class="nav nav-box">History</a>
+  </nav>
+
+</div>
+</section>
+
+<section id="listing">
+  <div class="block box-item-nav">
+
+    <h2>Listings</h2>
+
+    <h3>CSS Selector:</h3>
+      <p>.block, .box-tem-nav</p>
+
+    <h3>Sample Code:</h3>
+      <code>
+        &lt;img src="" alt=""&gt;
+      </code>
+
+    <h3>Rendered Element:</h3>
+  <img src="img/listing.jpg" alt="Service Listing">
+</div>
+</section>
+
+  <section id="colors">
+    <div class="block box-item-nav">
+
+      <h2>Colors</h2>
+
+      <h3>CSS Selector:</h3>
+        <p>.block, .box-tem-nav</p>
+
+      <h3>Sample Code:</h3>
+        <code>
+          &lt;img src="" alt=""&gt;
+        </code>
+
+      <h3>Rendered Element:</h3>
+    <img src="img/colors.jpg" alt="color swatches">
+</div>
+</section>
+
+<div class="block box-item-nav">
+  <h2>Other:</h2>
+
+  <h3>Icons:</h3>
+  <img src="img/icons.jpg" alt="icons">
+
+  <h3>Sample Site:</h3>
+  <img src="img/site.jpg" alt="site">
+</div>
+
+<div class="block box-item-nav">
+  <h2> External Links:</h2>
+  <h2><a href="http://www.sfu.ca/~serenah/wireframes/frames.html">Wireframes</a></h2>
+  <h2><a href="http://www.sfu.ca/~serenah/citations/index.html">Citations</a></h2>
+</div>
+
+</div>
+
+</body>
+</html>
