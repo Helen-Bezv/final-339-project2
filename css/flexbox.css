@@ -245,7 +245,6 @@
 			width: 100%;
 			padding: 1rem;
 		}
-
 	}
 
 @media (max-width: 30rem){
@@ -315,12 +314,9 @@
 		padding: 0;
 	}
 
-
 	html.about{
 		background-size: 100%;
 	}
-
-
 }
 
 .profile-container {
