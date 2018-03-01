@@ -115,6 +115,7 @@ textarea {
 	border-style: dotted;
 	display: flex;
 	flex: 2 2 10em;
+
 	margin: 1rem 0 1rem 0;
 	padding-left: 0.5rem;
 	text-align: left;
@@ -218,6 +219,12 @@ textarea {
 	color: black;
 }
 
+.catalogue-icon {
+	width: 33.3%;
+}
+
+
+
 /*Adapted from: https://codepen.io/nxworld/pen/ZYNOBZ*/
 .saved-item img{
 	width: 100%;
@@ -246,8 +253,8 @@ textarea {
 
   padding: 10rem 0 8rem 0;
 	margin-bottom: 4rem;
-
 }
+
 
 #catalogue img {
 
@@ -273,6 +280,16 @@ textarea {
 #catalogue a:hover {
 	text-decoration: none;
 	color: black;
+}
+
+.hidden-icon {
+	display: none;
+}
+
+#label-form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
 }
 
 hr {
@@ -322,7 +339,7 @@ input[type=submit] {
 	border-radius: 4px;
 	cursor: pointer;
 	float: right;
-	margin: 3rem 0;
+	margin: 3rem 1rem;
 }
 
 .form-button:hover {
@@ -469,13 +486,4 @@ input[type=submit]:hover {
 	width: 100%;
 	padding: 0.5rem;
 	margin-top: 5rem;
-}
-
-
-footer {
-	/* position: absolute;
-		 left: 0;
-		 bottom: 0;
-		 width: 100%;
-		 height: 150px; */
 }

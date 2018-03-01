@@ -18,6 +18,7 @@
 	-webkit-justify-content: center;
 	-ms-justify-content: center;
 	justify-content: center;
+	-webkit-flex-flow: row wrap;
 
 }
 
@@ -71,6 +72,27 @@
 	.intro p {
 		padding: 0 1rem 0 1rem;
 	}
+}
+
+@media (max-width: 710px) {
+
+    .catalogue-icon {
+			width: 50%;
+			transform: scale(0.8, 0.8);
+		}
+
+		#catalogue img {
+    padding: 1rem;
+		}
+}
+
+@media (max-width: 345px) {
+
+	.catalogue-icon {
+		width: 85%;
+		transform: scale(0.7, 0.7);    /*source: https://www.w3schools.com/cssref/css3_pr_transform.asp*/
+	}
+
 }
 
 @media (max-width: 50.25rem) {
@@ -259,6 +281,8 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: center;
+
+
 }
 
 .event-description, .about-description{
@@ -329,7 +353,6 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: center;
-	/* position: relative; */
 	bottom: 0;
 	left: 0;
 }
