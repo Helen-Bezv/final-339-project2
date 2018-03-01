@@ -79,8 +79,8 @@
         margin-top: 0;
     }
 
-		.about-item{
-			width: 80%;
+		.about-item .about-description{
+			width: 100%;
 			font-size: 0.9rem;
 		}
 
@@ -102,8 +102,9 @@
 
 @media (max-width: 30rem){
 
-	.about-item{
+	.about-item .about-description{
 		width: 100%;
+		margin: 0;
 		font-size: 0.8rem;
 	}
 
@@ -118,7 +119,7 @@
 
 .profile-container {
   padding: 0 2rem;
-  margin: 8rem 0 5rem 0;
+  margin:  0;
 	list-style: none;
 
   display: -webkit-box;
@@ -167,8 +168,7 @@
 	display: -webkit-flex;
 	display: flex;
 
-	-webkit-justify-content: center;
-	-ms-justify-content: center;
+	-webkit-flex-flow: row wrap;
 	justify-content: center;
 }
 
