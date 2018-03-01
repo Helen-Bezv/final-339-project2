@@ -237,6 +237,12 @@
 		padding: 0;
 	}
 
+
+	html.about{
+		background-size: 100%;
+	}
+
+
 }
 
 .profile-container {
@@ -279,7 +285,8 @@
 }
 
 .saved-item img:hover {
-	background: rgb(240, 240, 240);
+	background-image: url("../img/bg-img1.png");
+	background-size: 80%;
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 }
