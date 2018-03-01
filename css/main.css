@@ -224,22 +224,6 @@ textarea {
 }
 
 
-
-/*Adapted from: https://codepen.io/nxworld/pen/ZYNOBZ*/
-.saved-item img{
-	width: 100%;
--webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-
-.saved-item img:hover {
-	background: rgb(240, 240, 240);
-	-webkit-transform: scale(1.15);
-	transform: scale(1.15);
-}
-
 .saved-container a:hover, a:active, a:focus{
 	border-color: rgba(0, 0, 0, 0.2);
 	transition: 0.7s;
@@ -386,10 +370,9 @@ input[type=submit]:hover {
     clear: both;
 }
 
-}
 
 .description  {
-	line-height: 0.5rem;
+	line-height: 1.5rem;
 }
 
 .event-container h2 {
