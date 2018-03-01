@@ -19,46 +19,51 @@
 	<body>
 
 
-    <h1>learn &copy;</h1>
+		<div class="logo">
+		  <img src="img/logo.png" alt="this is our logo">
+		</div>
 
 		<nav class="navigation">
-	    <a href="index.html" class="navigation-item">home</a>
-	    <a href="about.html" class="navigation-item">about</a>
-	    <a href="events.html" class="navigation-item">events</a>
-	    <a href="contact.html" class="navigation-item">contact</a>
-	    <a href="profile.html" class="navigation-item">profile</a>
-	  </nav>
+			<a href="index.html" class="navigation-item">home</a>
+			<a href="about.html" class="navigation-item">about</a>
+			<a href="events.html" class="navigation-item">events</a>
+			<a href="contact.html" class="navigation-item">contact</a>
+			<a href="profile.html" class="navigation-item">profile</a>
+		</nav>
 
 		<!-- Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
 
-
-				<div class="box">
+				<div class="box" id="intro">
 
 			      	<div class="box-item intro">
-                    <p>  <strong> Learn &copy; </strong> is a non-profit organization that provides accessible online and in-person training in brand copywriting. We prepared this online tool to help you practice writing descriptions for product labels. Each category contains a ton of combinations of different product templates, giving you something new every time. <br> Save favorites to your profile to revisit them later. <br> Ready for something more? Attend one of our courses and workshops.   </p>
+                    <p>  <strong> Learn &copy; </strong> is a non-profit organization that provides accessible online and in-person training in brand copywriting. We prepared this online tool to help you practice writing descriptions for product labels. </p>
               </div>
 			</div>
 
 
 
-			<div class="box">
+			<div class="box begin">
 
-						<div class="box-item begin">
+						<div class="box-item">
 							<a href="#catalogue"> 	<figure>
 
 								<img src="img/pencil.png" alt="pencil">
-								<figcaption> begin: choose a product category </figcaption>
+								<figcaption> Let's begin </figcaption>
 							 </figure>
 								 </a>
 						</div>
 
 		</div>
 
+   <section id="catalogue">
 
+<div class="box">
 
+<p> Each category contains a ton of combinations of different product templates, giving you something new every time. <br> Save favorites to your profile to revisit them later. </p>
 
-		<ul class="box" id="catalogue">
-	  <li class="box-item">
+</div>
+		<ul class="saved-container">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> grocery store  </figcaption>
@@ -66,7 +71,7 @@
 		</figure>
 	</a>
  		  </li>
-	  <li class="box-item">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> bathroom </figcaption>
@@ -75,7 +80,7 @@
 		</a>
 		</li>
 
-	  <li class="box-item">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> coffee shop </figcaption>
@@ -83,7 +88,7 @@
 			 </figure>
 		 </a>
 		</li>
-	  <li class="box-item">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> gym </figcaption>
@@ -91,7 +96,7 @@
 			 </figure>
 		 </a>
 	 </li>
-	  <li class="box-item">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> school	</figcaption>
@@ -100,7 +105,7 @@
 		 </a>
 		 </li>
 
-	  <li class="box-item">
+	  <li class="catalogue-icon">
 			<a href="#main">
 			<figure>
 				<figcaption> outdoors </figcaption>
@@ -111,79 +116,82 @@
 	</ul>
 
 
+</section>
+
 
     <div class="box" id="main">
 
-     <div class="box-item product-img">
-			 <figure>
-      <img src="img/perfume.jpg" alt="empty product template">
-      <figcaption> WOMENS PERFUME </figcaption>
-		</figure>
-    </div>
-
-		<div class="box-item" id="attributes-list">
-
-
-
-		<div class="attribute">
-			   <p> Where you'd find it: <strong> specialty beauty stores </strong> </p>
-		</div>
-		<div class="attribute">
-			   <p> Targeting: <strong> female youth </strong> </p>
-		</div>
-		<div class="attribute">
-			   <p> Price range: <strong> above average - high </strong> </p>
-		</div>
-		<div class="attribute">
-				 <p> Brand values: <strong> ethical, open to conversation </strong> </p>
-		</div>
-		<div class="attribute">
-			   <p> Scent: <strong> sweet & floral  </strong> </p>
-		</div>
-			  <div class="attribute">
-				<p> Brand language: <strong> formal </strong> </p>
-	 	</div>
-
-
-
-
+		<div class="box-item product-img">
+		 <figure>
+		 <img src="img/perfume.jpg" alt="empty product template">
+		 <figcaption> WOMENS PERFUME </figcaption>
+	</figure>
 	 </div>
+
+	 <div class="box-item" id="attributes-list">
+
+
+
+	 <div class="attribute">
+				<p> Where you'd find it: <strong> specialty beauty stores </strong> </p>
+	 </div>
+	 <div class="attribute">
+				<p> Targeting: <strong> female youth </strong> </p>
+	 </div>
+	 <div class="attribute">
+				<p> Price range: <strong> above average - high </strong> </p>
+	 </div>
+	 <div class="attribute">
+				<p> Brand values: <strong> ethical, open to conversation </strong> </p>
+	 </div>
+	 <div class="attribute">
+				<p> Scent: <strong> sweet & floral  </strong> </p>
+	 </div>
+			 <div class="attribute">
+			 <p> Brand language: <strong> formal </strong> </p>
+	 </div>
+
+
+
+
+	</div>
+
 
 	 <div class="box-item">
 
-		 <div class="container">
-
-
-			 <form action="index.html#main">
-
+		 <section id="label-form">
 
 		     <div class="row">
 
 		       <div class="col-3">
-		         <textarea id="subject" name="subject" placeholder="What could its label say? Type in here.."></textarea>
+		        <textarea id="subject" name="subject" placeholder="What could its label say? Type in here.."></textarea>
 		       </div>
 		     </div>
 		     <div class="row">
 				   <a href="profile.html" class="form-button"> Save to my profile </a>
 					  <a href="#catalogue" class="form-button"> Back to catalogue </a>
-					 <input type="submit" value="Generate another product">
+					<a href="index.html#main" class="form-button"> Generate a new product </a>
 		     </div>
-		   </form>
-		 </div>
+
+		 </section>
 
 	</div>
+</div>
+
+	<div class="box">
+<div class="box-item intro">
+<p> Ready for something more? Attend one of our <a href="events.html" target="_blank">courses and workshops </a> for professional in-person training. </p>
+</div>
 	</div>
 
-
-	<section id="footer">
+	<footer>
 	  <div class="footer-container">
 	    <div class="footer-item">
-	      <p> serena ho & helen bezverhaia &copy;</p>
+	      <p> <a href="citations.html" target="_blank"> Citations </a>. <a href="style-guide/guide.html"> Style guide</a>.
+					serena ho & helen bezverhaia. &copy;</p>
 	    </div>
 	  </div>
-	</section>
-
-
+	</footer>
 
 	</body>
 </html>

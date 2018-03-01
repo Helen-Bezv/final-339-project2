@@ -63,7 +63,13 @@ margin-bottom: 8.5rem;
 }
 
 .intro p {
-	padding: 0 5rem 0 5rem;
+	margin: 0 8rem 0 8rem;
+	padding: 3rem;
+	background-color: rgb(240, 240, 240);
+}
+
+.bottom p {
+	background-color: white;
 }
 
 textarea {
@@ -76,6 +82,8 @@ textarea {
 	margin-bottom: 1rem;
 
 }
+
+
 
 .begin p {
 	color: black;
@@ -236,7 +244,8 @@ textarea {
 #catalogue {
 
   padding: 10rem 0 8rem 0;
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
+	text-align: center;
 }
 
 
@@ -264,10 +273,11 @@ textarea {
 #catalogue a:hover {
 	text-decoration: none;
 	color: black;
+	cursor: auto;
 }
 
-.hidden-icon {
-	display: none;
+#catalogue p {
+	padding: 2rem;
 }
 
 #label-form {
@@ -275,6 +285,19 @@ textarea {
 	background-color: #f2f2f2;
 	padding: 20px;
 }
+
+.intro a {
+	text-decoration: none;
+	color: #5dc5c5;
+
+}
+
+.intro a:hover {
+
+	background-color: none;
+	color: black;
+}
+
 
 hr {
     display: block;

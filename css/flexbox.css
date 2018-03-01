@@ -40,7 +40,7 @@
 }
 
 .navigation {
-	background: rgba(240, 240, 240, 0.9);
+	background: rgb(240, 240, 240);
 	width:100%;
 	margin: 0;
 	position: fixed;
@@ -84,7 +84,38 @@
 		#catalogue img {
     padding: 1rem;
 		}
+
 }
+
+@media (max-width: 1268px) {
+	.form-button {
+		margin: 0.4rem 1rem;
+	}
+}
+
+@media (max-width: 670px) {
+
+	.form-button {
+		line-height: 1.3rem;
+	}
+}
+
+@media (max-width: 890px) {
+
+.intro p {
+    margin-bottom: 3.5rem;
+		padding: 1rem;
+}
+}
+
+@media (max-width: 960px) {
+
+	.intro p {
+		padding: 5rem;
+	}
+}
+
+
 
 @media (max-width: 345px) {
 
@@ -93,7 +124,54 @@
 		transform: scale(0.7, 0.7);    /*source: https://www.w3schools.com/cssref/css3_pr_transform.asp*/
 	}
 
+	.intro, #catalogue p {
+		margin-bottom: 2rem;
+		padding: 2rem;
+	}
+
+	#catalogue {
+		margin-top: 0.5rem;
+		padding-top: 0.3rem;
+	}
+
 }
+
+@media (max-width: 620px) {
+
+   #catalogue {
+		 margin-bottom: 0;
+	 }
+
+}
+
+@media (max-width: 545px) {
+
+	.intro p {
+		margin: 0 2.5rem 0 2.5rem;
+		padding: 1.5rem;
+	}
+}
+
+@media (max-width: 340px) {
+
+	.intro p {
+		margin: 0 0.2rem 0 0.2rem;
+		padding: 1rem;
+	}
+
+}
+
+@media (max-width: 730px) {
+
+	#catalogue {
+
+		margin-top: 1rem;
+		padding-top: 1rem;
+	}
+
+
+}
+
 
 @media (max-width: 50.25rem) {
     .col-1, .col-2, input[type=submit], .profile-right {
