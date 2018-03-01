@@ -27,6 +27,12 @@ p, ol, ul{
   line-height:150%;
 }
 
+
+ul{
+  list-style-type: circle;
+}
+
+
 img{
   width: 30%;
 }
