@@ -65,18 +65,18 @@
   <h2>Navigation Button Style:</h2>
 
   <h3>CSS Selector:</h3>
-    <p>.mini-nav</p>
+    <p>.navigation</p>
 
   <h3>Sample Code:</h3>
     <code>
-      <br>&lt;nav&gt;</br>
-          <br>&lt;a href=""&gt;&lt;/a></br>
-        <br>&lt;/nav></br>
+      <br>&lt;nav class="navigation"&gt;</br>
+        <br>&lt;a href="" class=""&gt;&lt;/a&gt;</br>
+      <br>&lt;/nav&gt;</br>
     </code>
   <h3>Rendered Element:</h3>
 
-  <nav class="mini-nav box">
-    <a href="#Requests" class="nav nav-box">Requests</a>
+  <nav class="navigation1">
+    <a href="index.html" class="navigation-item">home</a>
   </nav>
 
 </div>
@@ -87,18 +87,15 @@
   <h2>Submit/Reset Buttons</h2>
 
   <h3>CSS Selector:</h3>
-  <p>.button-animated</p>
-  <p>.button-animated2</p>
+  <p>.form-button</p>
 
   <h3>Sample Code:</h3>
   <code>
-    <br>&lt;button class="button-animated">&lt;span&gt;&lt;/span&gt;&lt;/button&gt;</br>
-    <br>&lt;button class="button-animated2"&gt;&lt;span&gt;&lt;/span&gt;&lt;/button&gt;</br>
+    <br>&lt;a href="" id="butt" class="form-button"&gt;update&lt;/a&gt;</br>
   </code>
 
   <h3>Rendered Element:</h3>
-  <button class="button-animated"><span>Log in</span></button>
-  <button class="button-animated2"><span>Cancel</span></button>
+  <a href="https://www.google.ca" id="butt" class="form-button">submit</a>
 </div>
 </section>
 
@@ -115,9 +112,14 @@
     </code>
 
   <h3>Rendered Element:</h3>
-  <form method="post" action="#"></form>
-    <label for="form-name">Special Requests:</label>
-    <input type="text" id="form-name" placeholder="Talk to me!">
+  <div class="row">
+    <div class="col-1">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-2">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
   </div>
 </section>
 
@@ -130,15 +132,15 @@
 
     <h3>Sample Code:</h3>
       <code>
-        <br>&lt;h4>Neighborhood Grocer&gt;/h4></br>
-        <br>&lt;h5>Neighborhood Grocer&gt;/h5></br>
-        <br>&lt;h6>NEIGHBORHOOD GROCER&gt;/h6></br>
+        <br>&lt;h4>Learn &copy;&gt;/h4></br>
+        <br>&lt;h5>Learn &copy;&gt;/h5></br>
+        <br>&lt;h6>Learn &copy;&gt;/h6></br>
       </code>
 
     <h3>Rendered Element:</h3>
-    <h4>Neighborhood Grocer</h4>
-    <h5>Neighborhood Grocer</h5>
-    <h6>NEIGHBORHOOD GROCER</h6>
+    <h4>Learn &copy;</h4>
+    <h5>Learn &copy;</h5>
+    <h6>Learn &copy;</h6>
   </div>
 </section>
 
@@ -152,11 +154,11 @@
   <h3>Sample Code:</h3>
   <code>
     (CSS): max-width: 40rem;
-    line-height:150;
+    line-height:1.5rem;
   </code>
 
   <h3>Rendered Element:</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>We started out in 2018 as a fun project developed by our founders Helen Bezverhaia and Serena Ho. As the need for copywriting in the demanding product design industry grew, we found our site increasing in popularity- hence, why we've created a whole catalogue of exercises for you to practice copywriting. Learn C is a non-profit organization with a goal of providing accessible online and in-person training in brand copywriting for people aspiring to master their writing skills.</p>
 
 </div>
 </section>
@@ -217,7 +219,7 @@
   <h2>Main Navigation:</h2>
 
   <h3>CSS Selector:</h3>
-    <p>.mini-nav</p>
+    <p>.navigation</p>
 
   <h3>Sample Code:</h3>
     <code>
@@ -229,10 +231,10 @@
     </code>
   <h3>Rendered Element:</h3>
 
-  <nav class="mini-nav box">
-    <a href="#Map" class="nav nav-box">Map</a>
-    <a href="#Requests" class="nav nav-box">Requests</a>
-    <a href="#History" class="nav nav-box">History</a>
+  <nav class="navigation1">
+    <a href="index.html" class="navigation-item">home</a>
+    <a href="index.html" class="navigation-item">profile</a>
+    <a href="index.html" class="navigation-item">about</a>
   </nav>
 
 </div>
@@ -252,7 +254,10 @@
       </code>
 
     <h3>Rendered Element:</h3>
-  <img src="img/listing.jpg" alt="Service Listing">
+    <div class="listing">
+    <p> coffee shop</p>
+  <img src="img/coffeeshop.png" alt="Service Listing">
+</div>
 </div>
 </section>
 
@@ -270,25 +275,39 @@
         </code>
 
       <h3>Rendered Element:</h3>
-    <img src="img/colors.jpg" alt="color swatches">
+    <img src="img/colors.png" alt="color swatches">
 </div>
 </section>
 
+  <section id="structure">
 <div class="block box-item-nav">
-  <h2>Other:</h2>
-
-  <h3>Icons:</h3>
-  <img src="img/icons.jpg" alt="icons">
-
-  <h3>Sample Site:</h3>
-  <img src="img/site.jpg" alt="site">
+  <h3>Structure</h3>
+  <h3>CSS Selector: .block{} .box-item-nav{}</h3>
+  <h3>Sample Code:</h3>
+  <code>
+    <br>  .navigation {</br>
+      	<br>display: flex;</br>
+      	<br>flex-wrap: wrap;
+        <br>justify-content: center;</br>
+        <br>}</br>
+  <h3>Rendered Elements:</h3>
+  <img src="img/grid1.png" class="grid">
+  <img src="img/grid2.png" class="grid">
 </div>
+</section>
 
+<section id="icons">
 <div class="block box-item-nav">
-  <h2> External Links:</h2>
-  <h2><a href="http://www.sfu.ca/~serenah/wireframes/frames.html">Wireframes</a></h2>
-  <h2><a href="http://www.sfu.ca/~serenah/citations/index.html">Citations</a></h2>
+  <h3>Logo/icons</h3>
+  <h3>CSS Selector:</h3>
+  <p>.logo{}</p>
+  <h3>Sample Code:</h3>
+  <code>
+    <br>&lt;img src="img/logo.png"&gt;</br>
+  <h3>Rendered Element:</h3>
+  <img src="img/logo.png" class="logo">
 </div>
+</section>
 
 </div>
 

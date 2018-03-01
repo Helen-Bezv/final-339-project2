@@ -1,36 +1,34 @@
-h1{
-  font-family:"UniversLTStd-Light";
-  font-size:2rem;
+h4{
+  font-family:"OpenSans-Regular";
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+h5{
+  font-family:"OpenSans-Regular";
+  font-size: 1.5rem;
   letter-spacing: 2px;
 }
 
 h4{
-  font-family:"HelveticaNeue-Medium";
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-h5{
-  font-family:"HelveticaNeue-Light";
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-h6{
   font-family:"OpenSans-Regular";
   font-size: 1rem;
   letter-spacing: 2px;
 }
 
 body{
-  font-family:"UniversLTStd-Light";
-  margin: 1rem;
+  font-family:"OpenSans-Regular";
   font-size: 0.85rem;
+  color: black;
 }
 
 p, ol, ul{
   max-width: 40rem;
   line-height:150%;
+}
+
+img{
+  width: 30%;
 }
 
 a{
@@ -44,10 +42,6 @@ a:active, a:hover, a:focus{
   text-decoration: none;
 }
 
-img{
-  max-width:100%;
-}
-
 code{
   display: inline-block;
   background-color: rgb(230, 230, 230);
@@ -55,22 +49,21 @@ code{
 }
 
 .nav:active, .nav:hover, .nav:focus {
-	color:white;
-	background-color: #53b1b1;
+	color:black;
+	background-color: rgb;
 }
 
 .nav{
   display: inline-block;
-  color: white;
-  background-color: #5dc5c5;
+  color: black;
+  background-color: rgba(240, 240, 240, 0.9);
   padding:0.75rem;
   transition: 0.5s;
 }
 
 .box-item-nav{
   font-size: 1rem;
-  max-width:40rem;
-  min-width:20rem;
+  width: 100%;
   padding:2rem 5rem;
 }
 
@@ -79,80 +72,87 @@ code{
   border: none;
 }
 
-.button-animated {
-  display: inline-block;
-  padding: 0.5em 0.7em;
-  margin: 1em 0;
-  color: white;
-  background-color: #81c681;
-  border-radius: 0.25em;
-  border: none;
+.form-button {
+	background-color: #5dc5c5;
+	color: white;
+	padding: 0.1rem 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: none;
+	margin: 3rem 1rem;
+}
+
+.form-button:hover {
+
+	text-decoration: none;
+	background-color:#2eaa9c;
+	color: white;
+}
+
+.navigation-item{
+  background: rgb(240, 240, 240);
   text-decoration: none;
-  -webkit-transition: all 0.5s;
-   transition: all 0.5s;
-   cursor: pointer;
- }
+  padding: 0.75rem 2rem;
+	color: black;
+	font-size: 1rem;
+	margin: 0;
+	width: 10%;
+	text-align: center;
+	border-bottom: 0 solid rgb(93, 197, 197);
+}
 
- .button-animated span {
-   cursor: pointer;
-   display: inline-block;
-   position: relative;
-   transition: 0.5s;
- }
+.navigation-item a:active, a:focus, a:hover{
+	border-bottom: 0.3rem solid rgb(93, 197, 197);
+	transition: 0.5s;
+  color: black;
+}
 
- .button-animated span:after {
-   content: '\00bb';
-   position: absolute;
-   opacity: 0;
-   top: 0;
-   right: -20px;
-   transition: 0.5s;
- }
+input[type=submit]:hover {
+    background-color:#2eaa9c;
+}
 
- .button-animated:hover span {
-   padding-right: 25px;
- }
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 
- .button-animated:hover span:after {
-   opacity: 1;
-   right: 0;
- }
+.col-1 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
 
- .button-animated2 {
-   display: inline-block;
-   padding: 0.5em 0.7em;
-   margin: 1em 0;
-   color: white;
-   background-color: #f48262;
-   border-radius: 0.25em;
-   border: none;
-   text-decoration: none;
-   -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
+.col-2 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
 
-  .button-animated2 span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
+.col-3 {
+	padding: 1rem;
+	float: left;
+	width: 100%;
+	margin-top: 6px;
+}
 
-  .button-animated2 span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
+.listing img{
+  width: 20%;
+}
 
-  .button-animated2:hover span {
-    padding-right: 25px;
-  }
+.grid{
+  width: 50%;
+}
 
-  .button-animated2:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+.logo{
+  width: 10%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
