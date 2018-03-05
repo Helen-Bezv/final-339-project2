@@ -39,7 +39,11 @@
 	z-index:2;
 }
 
-.navigation {
+
+
+
+
+.navigation, .navigationunhide {
 	background: rgb(240, 240, 240);
 	width:100%;
 	margin: 0;
@@ -157,6 +161,25 @@
 	.intro p {
 		margin: 0 0.2rem 0 0.2rem;
 		padding: 1rem;
+	}
+
+}
+
+@media (max-width: 480px) {
+	.navigation {
+		display: none;
+	}
+
+	.logo {
+		display: none;
+	}
+
+  .icon {
+		display: flex;
+	}
+
+	.navigationunhide {
+		display: flex;
 	}
 
 }

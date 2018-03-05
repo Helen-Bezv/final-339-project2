@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/flexbox.css">
+		<script src="js/menu.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 	</head>
@@ -20,10 +21,12 @@
 
 
 		<div class="logo">
-		  <img src="img/logo.png" alt="this is our logo">
+			<a href="index.html">
+		  <img src="img/logo.png" alt="Picture of our logo">
+		</a>
 		</div>
 
-		<nav class="navigation">
+		<nav class="navigation" id="navigation">
 			<a href="#intro" class="navigation-item">home</a>
 			<a href="about.html" class="navigation-item">about</a>
 			<a href="events.html" class="navigation-item">events</a>
@@ -31,14 +34,26 @@
 			<a href="profile.html" class="navigation-item">profile</a>
 		</nav>
 
-		<!-- Adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+		<!-- onClick attribute adapted from: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_ev_onclick -->
+    <div class="box">
+			<div class="box-item">
+		<a href="javascript:void(0);" class="icon" onclick="mobileMenu()"> <img src="img/menu.png" alt="hamburger menu icon">    </a>
+	</div>
+	</div>
 
+		<!-- Flexbox adapted from: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
 
 				<div class="box" id="intro">
 
 			      	<div class="box-item intro">
-                    <p>  <strong> Learn &copy; </strong> is a non-profit organization that provides accessible online and in-person training in brand copywriting. We prepared this online tool to help you practice writing descriptions for product labels. </p>
-              </div>
+
+
+		                    <p>  <strong> Learn &copy; </strong> is a non-profit organization that provides accessible online and in-person training in brand copywriting. We prepared this online tool to help you practice writing descriptions for product labels. </p>
+
+
+
+									</div>
+						  </div>
 			</div>
 
 
@@ -195,6 +210,9 @@
 	    </div>
 	  </div>
 	</footer>
+
+
+
 
 	</body>
 </html>

@@ -36,6 +36,11 @@ img {
 		border: none;
 }
 
+#pencil-square {
+	display: flex;
+}
+
+
 figure {
 		margin: 0;
 }
@@ -66,6 +71,7 @@ a:active, a:hover, a:focus {
 		margin: 0 8rem 0 8rem;
 		padding: 3rem;
 		background-color: rgb(240, 240, 240);
+
 }
 
 .bottom p {
@@ -81,6 +87,14 @@ textarea {
 		margin-bottom: 1rem;
 }
 
+.icon {
+	display: none;
+	margin: 1rem;
+	color: #5dc5c5;
+  position: fixed;
+  z-index: 10;
+	justify-content: flex-end; /*source: https://stackoverflow.com/questions/22429003/right-aligning-flex-item*/
+}
 
 
 .begin p {
@@ -137,6 +151,10 @@ textarea {
 .logo{
 		width: 3%;
 		margin-left: 2rem;
+}
+
+.logo a:hover {
+	text-decoration: none;
 }
 
 .navigation-item{
